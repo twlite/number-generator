@@ -22,7 +22,7 @@ function generate() {
         nums.push(parseInt(i).toString(parseInt(data.base)));
     } 
 
-    let top = `<div class="table-responsive">
+    let up = `<div class="table-responsive">
         <table class="table table-bordered table-dark table-stripped table-hover">
             <thead>
                 <tr>
@@ -38,12 +38,12 @@ function generate() {
     </div>
     `;
     nums.forEach((n, i) => {
-        top += `<tr>
+        up += `<tr>
             <th scope="row">${i+1}.</th>
             <td>${n.toUpperCase()}</td>
         </tr>`
     })
-    $(".req").html(top + down);
+    $(".req").html(up + down);
 }
 
 document.getElementById("bton").addEventListener("click", (event) => {
