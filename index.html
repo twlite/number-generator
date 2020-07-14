@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+            <a class="navbar-brand" href="index.html">Home</a>
+        </nav>
+        <div class="jumbotron m-box bg-alpha text-white">
+            <div class="req">
+                <form>
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input class="form-control" id="from" type="number" value="1" placeholder="Starting number..." min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <input class="form-control" id="to" type="number" value="50" placeholder="Ending number..." min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="base">Base</label>
+                        <select class="form-control" id="base">
+                            <option value="2">Binary</option>
+                            <option value="8">Octal</option>
+                            <option value="10" selected>Decimal</option>
+                            <option value="16">Hexadecimal</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-lg" id="bton" type="button" onclick="generate()" style="width: 100%;">Generate</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

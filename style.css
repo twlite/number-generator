@@ -1,0 +1,15 @@
+body {
+    background-color: #23272A !important;
+}
+
+.bg-alpha {
+    background-color: #2C2F33 !important;
+}
+
+.m-box {
+    margin-top: 3rem !important;
+}
+
+select, tbody {
+    cursor: pointer !important;
+}
