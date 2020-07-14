@@ -5,8 +5,8 @@ function generate() {
         base: $("#base").val()
     };
 
-    if (parseInt(data.start) > parseInt(data.to)) {
-        alert("Starting number may not be greater than ending number!");
+    if (parseInt(data.start) >= parseInt(data.to)) {
+        alert("Starting number may not be greater than or equal ending number!");
         location.reload();
         return;
     }
