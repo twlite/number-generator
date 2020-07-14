@@ -23,7 +23,7 @@ function generate() {
     } 
 
     let top = `<div class="table-responsive">
-        <table class="table table-bordered table-dark table-hover table-stripped">
+        <table class="table table-bordered table-dark table-stripped table-hover">
             <thead>
                 <tr>
                 <th scope="col">S.N.</th>
